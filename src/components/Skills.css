@@ -1,0 +1,65 @@
+.skills-section {
+  padding: 60px 20px;
+}
+
+.skills-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #b46b7a;      /* blush accent */
+  text-align: left;    /* important */
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
+/* GRID LAYOUT */
+.skills-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
+}
+
+/* INDIVIDUAL SKILL CARD */
+.skill-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #f3d6dd;
+  box-shadow: 0 4px 12px rgba(180, 107, 122, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(180, 107, 122, 0.25);
+}
+
+/* ICON */
+.skill-icon {
+  font-size: 32px;
+  color: #e5a3ad;
+  margin-bottom: 8px;
+}
+
+/* NAME */
+.skill-name {
+  font-weight: 600;
+  color: #444;
+}
+
+/* DARK MODE */
+.dark-mode .skill-card {
+  background: #1f1f23;
+  border-color: #333;
+}
+
+.dark-mode .skill-name {
+  color: #eee;
+}
+
+.dark-mode .skills-title {
+  color: #f2c1cb;
+}

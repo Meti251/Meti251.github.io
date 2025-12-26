@@ -1,0 +1,41 @@
+.tech-section {
+  background: linear-gradient(to bottom, #fff5f7, #ffe4ec);
+  border-top: 1px solid rgba(0,0,0,.04);
+}
+
+.tech-title {
+  text-align: center;
+  color: #b46b7a;
+  margin-bottom: 22px;
+  font-weight: 800;
+}
+
+.tech-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tech-chip {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(180,107,122,.15);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.tech-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(180,107,122,.25);
+  background: #fff9fb;
+}
+
+.tech-icon { font-size: 22px; color: #e5a3ad; }
+.tech-name { font-weight: 700; letter-spacing: .2px; }
+
+.dark-mode .tech-chip { background: #1e1e22; border-color: #2a2a30; color: #eee; }
+.dark-mode .tech-chip:hover { background: #22222a; }
